@@ -12,7 +12,23 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+## GraphQL mutations
 
+### Create a user
+```
+mutation {
+  createUser(input:{
+    name: "Gus Schiavon",
+    email: "gus@gus-schiavon.com"
+  }) {
+    user {
+    	id
+    	name
+    	email
+  	}
+  }
+}
+```
 * Database initialization
 
 * How to run the test suite
